@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --all-color: #;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  display: none;
+}
+.container {
+  width: 100%;
+  margin-inline: auto;
+}
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+.max-width-500 {
+  max-width: 500px;
+}
+div.navbar i {
+  float: right;
+  margin-top: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+div.navbar div.logo{
+    display: inline-block;
+}
+div.navbar div.logo span{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+div.navbar div.logo img{
+    vertical-align: middle;
+}
+header {
+  width: 100%;
+  padding-inline: 10px;
+  padding-top: 10px;
+  background-color: aqua;
+}
+header div.head h1 {
+  font-size: 40px;
+  font-weight: 1000;
+}
+header div.head p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+header img.dish {
+  width: 100%;
+}
+div.buttons {
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 20px;
+}
+
+button.shop {
+  background-color: orange;
+  padding-block: 15px;
+  padding-inline: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+button.contact {
+  background-color: black;
+  padding-block: 15px;
+  padding-inline: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+button.contact:hover,
+button.shop:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+/* --------------------- */
+section.first {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+section.first h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+section.first p {
+  margin-block: 20px;
+}
+section.first div.items {
+  border: 1px solid black;
+  margin-inline: 5px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  padding-inline: 5px;
+  transition: all 0.5s ease;
+}
+section.first div.items h3 {
+  margin-block: 20px;
+  color: orangered;
+}
+section.first div.items:hover {
+  transform: translateY(10px);
+  /* border-top: 10px solid red; */
+  box-shadow: 0px -10px 1px red;
+}
+/* ----------------------- */
+div.buy {
+  margin-block: 25px;
+}
+div.buy h3 {
+  font-weight: 600;
+}
+div.buy p {
+  font-weight: 400;
+}
+div.buy img {
+  display: block;
+  margin-inline: auto;
+  margin-block: 20px;
+}
+/* ----------------------- */
+section.second {
+  background-image: url(../images/tasty.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+section.second span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  width: 100%;
+  font-size: 4em;
+  color: white;
+}
+/* ----------------------- */
+div.client {
+  margin-block: 25px;
+  margin-inline: 10px;
+}
+div.client h3 {
+  font-size: 30px;
+}
+/* ----------------------- */
+section.contact {
+  position: relative;
+  height: fit-content;
+  padding-left: 10px;
+  margin-block: 25px;
+}
+section.contact img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+section.contact form input {
+  display: block;
+  margin-block: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50%;
+  background-color: transparent;
+  resize: none;
+  padding-left: 10px;
+  padding-bottom: 4px;
+}
+/* ----------------------- */
+section.foot {
+  background-color: white;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-inline: 10px;
+  height: 350px;
+}
+div.feet {
+  width: 45%;
+  display: inline-block;
+  height: 100px;
+  margin-block: 15px;
+  vertical-align: top;
+}
+div.icons span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  position: relative;
+  margin-block: 5px;
+}
+div.icons span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.feet input {
+  margin-block: 10px;
+}
+/* ----------------------- */
+footer {
+  background-color: aqua;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-weight: 600;
+}
+/* ----------------------- */
+/* Responsive Design */
+@media only screen and (min-width: 1200px) {
+  /* nav */
+  .container {
+    width: 100%;
+  }
+  nav {
+    width: 60%;
+    margin-inline: auto;
+  }
+  div.navbar i {
+    display: none;
+  }
+  div.navbar {
+    display: inline-block;
+  }
+  nav li {
+    display: inline;
+    font-size: 25px;
+  }
+  nav ul {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+  }
+  /* header */
+  header div.head {
+    width: 40%;
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+  header div.head h1{
+    font-size: 4rem   ;
+    font-weight: 1000;
+}
+  header div.head p {
+    margin-block: 20px;
+    line-height: 2;
+  }
+  header img.dish {
+    width: 40%;
+    margin-top: 6%;
+    margin-right: 10%;
+    float: right;
+  }
+  div.buttons {
+    margin-inline: 0;
+  }
+  /* first */
+  div.items {
+    display: inline-block;
+    width: 30%;
+  }
+  section.first button {
+    display: block;
+    margin-inline: auto;
+  }
+  /* first fruits */
+  div.store{
+    width: 80%;
+    margin-inline: auto;
+  }
+  div.buy div.buyitems {
+    float: left;
+    width: 50%;
+    text-align: left;
+    line-height: 2;
+    vertical-align: text-bottom;
+  } 
+  div.buy div.buyitems button{
+    margin-inline: 0;
+  }
+  /* tasty */
+  section.second span{
+    font-size: 7rem;
+  }
+  /* testemonial */
+  div.client p {
+    width: 80%;
+    margin-inline: auto;
+  }
+  /* contact */
+  section.contact {
+    height: 500px;
+  }
+  section.contact form {
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 50%;
+  }
+  section.contact form input {
+    font-size: 20px;
+    margin-block: 30px;
+    width: 100%;
+  }
+  /* feet */
+  section.foot {
+    width: 80%;
+    margin-inline: auto;
+    line-height: 2;
+  }
+  div.feet {
+    width: 24%;
+    margin-left: auto;
+  }
+  div.feet input{
+    display: block;
+  }
+}
